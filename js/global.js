@@ -1,3 +1,3 @@
-let rock = "rock";
-let paper = "paper";
-let scissors = "scissors";
+const ROCK = "rock";
+const PAPER = "paper";
+const SCISSORS = "scissors";
