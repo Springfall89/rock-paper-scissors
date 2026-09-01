@@ -2,7 +2,7 @@ body
 {
     background-color: black;
     color: white;
-    font-size: 100px;
+    font-size: clamp(2rem, 10vw, 4rem);
     margin: 0;
     display: flex;
     flex-wrap: wrap;
