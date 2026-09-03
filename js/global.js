@@ -26,7 +26,7 @@ switch (getRandomInt(3))
 function getHumanChoice()
 {
     let choice = prompt("Rock, Paper or Scissors?");
-    switch (choice)
+    switch (choice.trim()?.toLowerCase())
     {
         case "rock": {
             return ROCK;
