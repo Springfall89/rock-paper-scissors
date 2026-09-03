@@ -3,7 +3,6 @@ const PAPER = "paper";
 const SCISSORS = "scissors";
 let computerScore = 0;
 let humanScore = 0;
-const showScore = `Your Score: ${humanScore}\nComputer Score: ${computerScore}`;
 
 function getComputerChoice()
 {
@@ -78,4 +77,9 @@ function playRound()
         alert("The Computer picked Paper.\n\nYou Lose! Paper beats Rock.");
         return ++computerScore;
     }
+}
+
+function showScore()
+{
+    return `Your Score: ${humanScore}\nComputer Score: ${computerScore}`;
 }
