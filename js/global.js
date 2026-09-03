@@ -1,6 +1,8 @@
 const ROCK = "rock";
 const PAPER = "paper";
 const SCISSORS = "scissors";
+let computerScore = 0;
+let humanScore = 0;
 
 function getComputerChoice()
 {
