@@ -61,8 +61,17 @@ function getHumanChoice()
 
 function playRound()
 {
-    getComputerChoice();
-    getHumanChoice();
+    let computerChoice = getComputerChoice();
+    let humanChoice = getHumanChoice();
+
+    computerChoice;
+    humanChoice;
+
+    // Rock results
+    if ((humanChoice === ROCK) && (computerChoice === ROCK))
+    {
+        alert("Computer picked Rock.\n\nIt's a Tie! Rock and Rock.");
+    }
 
     console.log(showScore);
 }
