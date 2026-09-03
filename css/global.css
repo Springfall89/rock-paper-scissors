@@ -3,7 +3,12 @@ body
     background-color: black;
     color: white;
     font-size: clamp(2.5rem, 10vw, 4rem);
-    margin: min(2rem, 10%);
+    margin: clamp(2rem, 8vw, 3rem);
     display: flex;
     flex-wrap: wrap;
+    gap: clamp(2rem, 8vw, 4rem);
+}
+p
+{
+    margin: 0;
 }
