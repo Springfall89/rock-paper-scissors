@@ -55,26 +55,14 @@ function getHumanChoice()
 
 //declare playRound func
 //set conditionals for each move
-//update score at the end
-//log score in console?
+//return updated score
+//log score in console at the end
 
 
 function playRound()
 {
-//Rock results
     getComputerChoice();
     getHumanChoice();
-    if ((getHumanChoice() === ROCK) && (getComputerChoice() === ROCK))
-    {
-        alert("Computer picked Rock. \nIt's a Tie! Rock and Rock.");
-        console.log(showScore);
-        return;
-    }
-    else if ((getHumanChoice() === ROCK) && (getComputerChoice() === PAPER))
-    {
-        alert("Computer picked Paper. \nYou Lose! Paper beats Rock.");
-        ++computerScore;
-        console.log(showScore);
-        return;
-    }
+
+    console.log(showScore);
 }
