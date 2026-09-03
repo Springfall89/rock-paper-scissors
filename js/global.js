@@ -64,14 +64,18 @@ function playRound()
     let computerChoice = getComputerChoice();
     let humanChoice = getHumanChoice();
 
-    computerChoice;
     humanChoice;
+    computerChoice;
 
     // Rock results
     if ((humanChoice === ROCK) && (computerChoice === ROCK))
     {
-        alert("Computer picked Rock.\n\nIt's a Tie! Rock and Rock.");
+        alert("The Computer picked Rock.\n\nIt's a Tie! Rock and Rock.");
+        return;
     }
-
-    console.log(showScore);
+    else if ((humanChoice === ROCK) && (computerChoice === PAPER))
+    {
+        alert("The Computer picked Paper.\n\nYou Lose! Paper beats Rock.");
+        return ++computerScore;
+    }
 }
