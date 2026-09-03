@@ -117,3 +117,8 @@ function showScore()
 {
     return `Your Score: ${humanScore}\nComputer Score: ${computerScore}`;
 }
+
+window.addEventListener('beforeunload', (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+});
