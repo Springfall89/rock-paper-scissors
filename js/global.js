@@ -25,19 +25,28 @@ switch (getRandomInt(3))
 
 function getHumanChoice()
 {
-    let choice = prompt("Rock, Paper or Scissors?");
-    switch (choice.trim()?.toLowerCase())
+    const choice = prompt("Rock, Paper or Scissors?");
+
+    if (choice?.trim().toLowerCase() === "rock")
     {
-        case "rock": {
-            return ROCK;
-        } case "paper": {
-            return PAPER;
-        } case "scissors": {
-            return SCISSORS;
-        } default: {
-            alert("Play a real move!");
-            getHumanChoice();
-            break;
-        }
+        return ROCK;
+    }
+    else if (choice?.trim().toLowerCase() === "paper")
+    {
+        return PAPER;
+    }
+    else if (choice?.trim().toLowerCase() === "scissors")
+    {
+        return SCISSORS;
+    }
+    else if (choice === null)
+    {
+        alert("You cancelled the round. Score unaffected.");
+        return;
+    }
+    else
+    {
+        alert("Play a real move!");
+        getHumanChoice();
     }
 }
