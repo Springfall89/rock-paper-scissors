@@ -25,7 +25,7 @@ switch (getRandomInt(3))
 
 function getHumanChoice()
 {
-    let choice = prompt("Enter your move:");
+    let choice = prompt("Rock, Paper or Scissors?");
     switch (choice.toLowerCase())
     {
         case "rock": {
@@ -35,7 +35,7 @@ function getHumanChoice()
         } case "scissors": {
             return SCISSORS;
         } default: {
-            alert("Try Again!");
+            alert("Play a real move!");
             getHumanChoice();
             break;
         }
