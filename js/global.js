@@ -3,6 +3,7 @@ const PAPER = "paper";
 const SCISSORS = "scissors";
 let computerScore = 0;
 let humanScore = 0;
+const showScore = `Your Score: ${humanScore}\nComputer Score: ${computerScore}`;
 
 function getComputerChoice()
 {
