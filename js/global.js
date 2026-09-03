@@ -66,7 +66,6 @@ function playRound()
     humanChoice;
     computerChoice;
 
-    // Rock results
     if ((humanChoice === ROCK) && (computerChoice === ROCK))
     {
         alert("The Computer picked Rock.\n\nIt's a Tie! Rock and Rock.");
@@ -80,6 +79,36 @@ function playRound()
     else if ((humanChoice === ROCK) && (computerChoice === SCISSORS))
     {
         alert("The Computer picked Scissors.\n\nYou Win! Rock beats Scissors.");
+        return ++humanScore;
+    }
+    else if ((humanChoice === PAPER) && (computerChoice === PAPER))
+    {
+        alert("The Computer picked Paper.\n\nIt's a Tie! Paper and Paper.");
+        return;
+    }
+    else if ((humanChoice === PAPER) && (computerChoice === SCISSORS))
+    {
+        alert("The Computer picked Scissors.\n\nYou Lose! Scissors cut Paper.");
+        return ++computerScore;
+    }
+    else if ((humanChoice === PAPER) && (computerChoice === ROCK))
+    {
+        alert("The Computer picked Rock.\n\nYou Win! Paper beats Rock.");
+        return ++humanScore;
+    }
+    else if ((humanChoice === SCISSORS) && (computerChoice === SCISSORS))
+    {
+        alert("The Computer picked Scissors.\n\nIt's a Tie! Scissors and Scissors.");
+        return;
+    }
+    else if ((humanChoice === SCISSORS) && (computerChoice === ROCK))
+    {
+        alert("The Computer picked Rock.\n\nYou Lose! Rock beats Scissors.");
+        return ++computerScore;
+    }
+    else if ((humanChoice === SCISSORS) && (computerChoice === PAPER))
+    {
+        alert("The Computer picked Paper.\n\nYou Win! Scissors cut Paper.");
         return ++humanScore;
     }
 }
