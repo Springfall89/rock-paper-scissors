@@ -77,6 +77,11 @@ function playRound()
         alert("The Computer picked Paper.\n\nYou Lose! Paper beats Rock.");
         return ++computerScore;
     }
+    else if ((humanChoice === ROCK) && (computerChoice === SCISSORS))
+    {
+        alert("The Computer picked Scissors.\n\nYou Win! Rock beats Scissors.");
+        return ++humanScore;
+    }
 }
 
 function showScore()
