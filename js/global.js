@@ -139,7 +139,7 @@ function playGame(scoreMax)
     
     if (scoreMax >= 1)
     {
-        alert(`Game Start!\nYou vs. Computer!\nBest of ${scoreMax}!`)
+        alert(`Game Start!\nYou vs. Computer!\nBest of ${scoreMax}!\n\nCancel to end the game.`)
         while ((computerScore || humanScore) <= scoreMax)
         {
             alert(`Round ${roundNum}!`);
@@ -153,18 +153,22 @@ function playGame(scoreMax)
                 }
             alert(showScore());
             ++roundNum;
-            if ((computerScore || humanScore) === scoreMax)
+            if ((computerScore === scoreMax) || (humanScore === scoreMax))
             {
                 if (computerScore > humanScore)
                 {
-                    alert(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
-                    console.log(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
+                    alert(`Game Over!\n\n${showScore()}\n\nThe Computer wins!\n\nScores have been reset to zero.`);
+                    console.log(`Game Over!\n\n${showScore()}\n\nThe Computer wins!\n\nScores have been reset to zero.`);
+                    computerScore = 0;
+                    humanScore = 0;
                     break;
                 }
                 else if (computerScore < humanScore)
                 {
-                    alert(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
-                    console.log(`Game Over!\n\n${showScore()}\n\nYou win!`);
+                    alert(`Game Over!\n\n${showScore()}\n\nYou win!\n\nScores have been reset to zero.`);
+                    console.log(`Game Over!\n\n${showScore()}\n\nYou win!\n\nScores have been reset to zero.`);
+                    computerScore = 0;
+                    humanScore = 0;
                     break;
                 }
             }
