@@ -194,7 +194,7 @@ function playGame(scoreMax)
     }
     else
     {
-        alert('Invalid Argument!\n\nOnly one argument is accepted.\nAcceptable values include:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
-        console.error('Invalid Argument!\n\nOnly one argument is accepted.\nAcceptable values include:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
+        alert('Invalid Argument!\n\nOnly one argument must be accepted.\nAcceptable values include:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
+        console.error('Invalid Argument!\n\nOnly one argument must be accepted.\nAcceptable values include:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
     }
 }
