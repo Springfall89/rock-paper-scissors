@@ -41,8 +41,18 @@ function getHumanChoice()
     }
     else if (choice === null)
     {
-        alert("You cancelled the round. Score unaffected.");
-        return;
+        if (confirm("Do you want to end the game?\n\nThe scores will be reset to zero."))
+        {
+            computerScore = 0;
+            humanScore = 0;
+            return;
+        }
+        else
+        {
+            getHumanChoice();
+            return;
+        }
+
     }
     else
     {
