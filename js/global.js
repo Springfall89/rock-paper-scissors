@@ -140,7 +140,7 @@ function playGame(scoreMax)
     if (scoreMax >= 1)
     {
         alert(`Game Start!\nYou vs. Computer!\nBest of ${scoreMax}!\n\nCancel to end the game.`)
-        while ((computerScore || humanScore) <= scoreMax)
+        while ((computerScore <= scoreMax) || (humanScore <= scoreMax))
         {
             alert(`Round ${roundNum}!`);
             let roundResult = playRound();
@@ -177,7 +177,7 @@ function playGame(scoreMax)
     else if (scoreMax === 0)
     {
         alert(`Game Start!\nYou vs. Computer!\nInfinite Rounds!\n\nCancel to end the game.`);
-        while ((computerScore || humanScore) <= scoreMax)
+        while ((computerScore <= scoreMax) || (humanScore <= scoreMax))
         {
             alert(`Round ${roundNum}!`);
             let roundResult = playRound();
