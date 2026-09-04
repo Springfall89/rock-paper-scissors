@@ -41,18 +41,14 @@ function getHumanChoice()
     }
     else if (choice === null)
     {
-        if (confirm("Do you want to end the game?\n\nThe scores will be reset to zero."))
+        if (confirm("Do you want to end the game?\nThe scores will be reset to zero."))
         {
-            computerScore = 0;
-            humanScore = 0;
-            return;
+            return null;
         }
         else
         {
             getHumanChoice();
-            return;
         }
-
     }
     else
     {
@@ -72,54 +68,93 @@ function playRound()
 
     if ((humanChoice === ROCK) && (computerChoice === ROCK))
     {
-        alert("The Computer picked Rock.\n\nIt's a Tie! Rock and Rock.");
+        alert("The Computer picked Rock.\nIt's a Tie! Rock and Rock.");
         return;
     }
     else if ((humanChoice === ROCK) && (computerChoice === PAPER))
     {
-        alert("The Computer picked Paper.\n\nYou Lose! Paper beats Rock.");
+        alert("The Computer picked Paper.\nYou Lose! Paper beats Rock.");
         return ++computerScore;
     }
     else if ((humanChoice === ROCK) && (computerChoice === SCISSORS))
     {
-        alert("The Computer picked Scissors.\n\nYou Win! Rock beats Scissors.");
+        alert("The Computer picked Scissors.\nYou Win! Rock beats Scissors.");
         return ++humanScore;
     }
     else if ((humanChoice === PAPER) && (computerChoice === PAPER))
     {
-        alert("The Computer picked Paper.\n\nIt's a Tie! Paper and Paper.");
+        alert("The Computer picked Paper.\nIt's a Tie! Paper and Paper.");
         return;
     }
     else if ((humanChoice === PAPER) && (computerChoice === SCISSORS))
     {
-        alert("The Computer picked Scissors.\n\nYou Lose! Scissors cut Paper.");
+        alert("The Computer picked Scissors.\nYou Lose! Scissors cut Paper.");
         return ++computerScore;
     }
     else if ((humanChoice === PAPER) && (computerChoice === ROCK))
     {
-        alert("The Computer picked Rock.\n\nYou Win! Paper beats Rock.");
+        alert("The Computer picked Rock.\nYou Win! Paper beats Rock.");
         return ++humanScore;
     }
     else if ((humanChoice === SCISSORS) && (computerChoice === SCISSORS))
     {
-        alert("The Computer picked Scissors.\n\nIt's a Tie! Scissors and Scissors.");
+        alert("The Computer picked Scissors.\nIt's a Tie! Scissors and Scissors.");
         return;
     }
     else if ((humanChoice === SCISSORS) && (computerChoice === ROCK))
     {
-        alert("The Computer picked Rock.\n\nYou Lose! Rock beats Scissors.");
+        alert("The Computer picked Rock.\nYou Lose! Rock beats Scissors.");
         return ++computerScore;
     }
     else if ((humanChoice === SCISSORS) && (computerChoice === PAPER))
     {
-        alert("The Computer picked Paper.\n\nYou Win! Scissors cut Paper.");
+        alert("The Computer picked Paper.\nYou Win! Scissors cut Paper.");
         return ++humanScore;
+    }
+    else if ((humanChoice === null))
+    {
+        return null;
     }
 }
 
 function showScore()
 {
     return `Your Score: ${humanScore}\nComputer Score: ${computerScore}`;
+}
+
+function playGame(scoreMax)
+{   
+    let roundNum = 1;
+    alert(`Game Start!\nYou vs. Computer!\nBest of ${scoreMax}!`)
+    while ((computerScore || humanScore) <= scoreMax)
+    {
+        alert(`Round ${roundNum}!`);
+        let roundResult = playRound();
+            if (roundResult === null)
+            {
+                alert(`Game Over!\nYou cancelled the game.\nScores reset to zero.`);
+                computerScore = 0;
+                humanScore = 0;
+                break;
+            }
+        alert(showScore());
+        ++roundNum;
+        if ((computerScore || humanScore) === scoreMax)
+        {
+            if (computerScore > humanScore)
+            {
+                alert(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
+                console.log(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
+                break;
+            }
+            else if (computerScore < humanScore)
+            {
+                alert(`Game Over!\n\n${showScore()}\n\nThe Computer wins!`);
+                console.log(`Game Over!\n\n${showScore()}\n\nYou win!`);
+                break;
+            }
+        }
+    }
 }
 
 window.addEventListener('beforeunload', (event) => {
