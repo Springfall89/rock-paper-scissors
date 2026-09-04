@@ -4,6 +4,17 @@ const SCISSORS = "scissors";
 let computerScore = 0;
 let humanScore = 0;
 
+
+window.addEventListener('beforeunload', (event) => {
+    if ((computerScore || humanScore) != 0)
+    {
+    event.preventDefault();
+    event.returnValue = "";
+    }
+});
+
+console.log('Welcome to the Console! Looks like you have made it. If you are reading this on mobile then I congratulate you. In order to start the game just type playGame(value) into the console and replace "value" with these valid values:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
+
 function getComputerChoice()
 {
     function getRandomInt(max)
@@ -183,11 +194,3 @@ function playGame(scoreMax)
         console.error('Invalid Argument!\n\nOnly one argument is accepted.\nAcceptable values include:\n\n- Natural numbers for finite rounds.\n- Zero or "Infinity" for infinite rounds.');
     }
 }
-
-window.addEventListener('beforeunload', (event) => {
-    if ((computerScore || humanScore) != 0)
-    {
-    event.preventDefault();
-    event.returnValue = "";
-    }
-});
