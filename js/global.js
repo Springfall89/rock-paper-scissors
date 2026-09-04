@@ -119,6 +119,9 @@ function showScore()
 }
 
 window.addEventListener('beforeunload', (event) => {
+    if ((computerScore || humanScore) != 0)
+    {
     event.preventDefault();
     event.returnValue = "";
+    }
 });
