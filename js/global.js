@@ -62,12 +62,6 @@ function getHumanChoice()
     }
 }
 
-//declare playRound func
-//set conditionals for each move
-//return updated score
-//log score in console at the end
-
-
 function playRound()
 {
     let computerChoice = getComputerChoice();
