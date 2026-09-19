@@ -11,7 +11,7 @@ a
 }
 .chat-list-container
 {
-    width: clamp(200px, 30%, 600px);
+    width: clamp(200px, 30%, 500px);
     height: 100dvh;
     display: flex;
     flex-direction: column;
