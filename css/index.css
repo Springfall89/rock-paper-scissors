@@ -29,3 +29,8 @@ a
     font-weight: 700;
     text-align: center;
 }
+.chat-list > *
+{
+    height: 100px;
+    display: flex;
+}
