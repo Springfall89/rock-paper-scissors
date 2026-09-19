@@ -11,7 +11,7 @@ a
 }
 .chat-list-container
 {
-    width: clamp(200px, 30%, 500px);
+    width: clamp(200px, 30vw, 500px);
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -19,10 +19,11 @@ a
 }
 .main-title
 {
-    height: 50px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     font-size: clamp(0.5rem, 10vw, 2rem);
     font-weight: 700;
     text-align: center;
