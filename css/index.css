@@ -17,3 +17,13 @@ a
     flex-direction: column;
     background-color: #0A1B78;
 }
+.main-title
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.5rem, 10vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+}
