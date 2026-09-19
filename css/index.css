@@ -10,6 +10,11 @@ a
     text-decoration: none;
     color: #FFFFFF;
 }
+a,
+p
+{
+    margin: 0;
+}
 .chat-list-container
 {
     width: clamp(200px, 30vw, 500px);
