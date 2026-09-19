@@ -15,6 +15,9 @@ p
 {
     margin: 0;
 }
+
+/* CLASSES */
+
 .chat-list-container
 {
     width: clamp(200px, 30vw, 500px);
@@ -38,4 +41,14 @@ p
 {
     height: 100px;
     display: flex;
+}
+.computer-chat
+{
+    background-color: #1330ce;
+}
+
+/* HOVERS */
+.chat-list > *:hover:not(.computer-chat)
+{
+    background-color: #1800ad;
 }
