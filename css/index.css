@@ -5,3 +5,13 @@ body
     margin: 0;
     font-family: sans-serif;
 }
+/* CLASSES */
+.header-container
+{
+    height: 75px;
+    background-color: #0a1b78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
