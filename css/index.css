@@ -17,12 +17,12 @@ body
 }
 .header
 {
-    font-size: clamp(1rem, 7vw, 2.5rem);
-    font-weight: 700;
-    text-align: center;
     padding: 16px;
 }
 .header > p
 {
+    font-size: clamp(1rem, 8vw, 2rem);
+    font-weight: 1000;
+    text-align: center;
     margin: 0;
 }
