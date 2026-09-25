@@ -48,8 +48,10 @@ body
 {
     font-weight: 900;
     font-size: clamp(0.5rem, 8vw, 1.5rem);
+    margin: 0;
 }
 .src-sub-text
 {
     font-size: clamp(0.25rem, 8vw, 1rem);
+    margin: 0;
 }
