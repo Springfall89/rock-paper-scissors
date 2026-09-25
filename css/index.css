@@ -32,3 +32,8 @@ body
     align-items: center;
     box-sizing: border-box;
 }
+.src-img
+{
+    width: 50px;
+    height: auto;
+}
