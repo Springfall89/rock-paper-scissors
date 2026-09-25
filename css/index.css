@@ -23,3 +23,12 @@ body
     margin: 0;
     padding: 16px;
 }
+.footer-container
+{
+    background-color: #0a1b78;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
