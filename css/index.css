@@ -43,6 +43,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 .src-main-text
 {
