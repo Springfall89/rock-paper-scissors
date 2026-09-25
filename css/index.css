@@ -56,3 +56,8 @@ body
     font-size: clamp(0.25rem, 8vw, 1rem);
     margin: 0;
 }
+/* PSEUDO CLASSES */
+.footer-container:hover
+{
+    background-color: #1800ad;
+}
