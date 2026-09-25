@@ -28,6 +28,14 @@ body
     background-color: #0a1b78;
     height: 75px;
     display: flex;
+}
+.src
+{
+    color: #ffffff;
+    text-decoration: none;
+    width: 100dvw;
+    width: 100vw;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -57,7 +65,7 @@ body
     margin: 0;
 }
 /* PSEUDO CLASSES */
-.footer-container:hover
+.src:hover
 {
     background-color: #1800ad;
 }
