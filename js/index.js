@@ -19,3 +19,16 @@ scoreContainer.classList.add("score-container");
 
     humanScoreContainer.appendChild(humanScoreText);
     humanScoreContainer.appendChild(humanScoreNum);
+
+    const computerScoreContainer = document.createElement("div");
+    computerScoreContainer.classList.add("computer-score");
+        const computerScoreText = document.createElement("p");
+        computerScoreText.classList.add("score-text");
+        computerScoreText.textContent = "Computer";
+
+        const computerScoreNum = document.createElement("p");
+        computerScoreNum.classList.add("score-num");
+        computerScoreNum.textContent = computerScore;
+
+    computerScoreContainer.appendChild(computerScoreText);
+    computerScoreContainer.appendChild(computerScoreNum);
