@@ -8,6 +8,11 @@ body
     display: flex;
     flex-direction: column;
 }
+main
+{
+    height: 100dvh;
+    height: 100vh;
+}
 p
 {
     margin: 0;
