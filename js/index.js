@@ -1,5 +1,5 @@
 const contentContainer = document.querySelector(".content-container");
-
+const btnLink = document.querySelectorAll(".btn-link");
 
 let humanScore = 0;
 let computerScore = 0;
