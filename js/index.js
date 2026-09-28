@@ -1,5 +1,5 @@
 const contentContainer = document.querySelector(".content-container");
-const btns = document.querySelectorAll(".btns");
+const btns = document.querySelectorAll(".btn");
     for (let btn of btns)
     {
         btn.addEventListener("click", () => {
