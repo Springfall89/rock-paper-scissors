@@ -85,7 +85,7 @@ body
 .score-text
 {
     font-weight: 900;
-    font-size: clamp(0.25rem, 4.5vw, 1.5rem);
+    font-size: clamp(1rem, 4.5vw, 1.5rem);
     text-align: center;
     margin: 0;
 }
@@ -99,7 +99,7 @@ body
 .versus-text
 {
     font-weight: 900;
-    font-size: clamp(0.25rem, 4.5vw, 1.5rem);
+    font-size: clamp(1rem, 4.5vw, 2rem);
     text-align: center;
     margin: 0;
 }
