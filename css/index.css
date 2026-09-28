@@ -73,6 +73,7 @@ body
 .score-container
 {
     width: 30vw;
+    padding: 32px;
     display: flex;
     justify-content: space-between;
     gap: 35px;
