@@ -70,6 +70,12 @@ body
     background-color: #1800ad;
 }
 /* DOM Elements */
+.score-container
+{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
 .score-container > *
 {
     display: flex;
