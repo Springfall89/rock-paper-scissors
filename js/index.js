@@ -53,5 +53,3 @@ scoreContainer.classList.add("score-container");
 scoreContainer.appendChild(humanScoreContainer);
 scoreContainer.appendChild(versusText);
 scoreContainer.appendChild(computerScoreContainer);
-
-contentContainer.appendChild(scoreContainer);
