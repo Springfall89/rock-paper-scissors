@@ -1,16 +1,16 @@
 const contentContainer = document.querySelector(".content-container");
 const btns = document.querySelectorAll(".btns");
-    for (let btns of btns)
+    for (let btn of btns)
     {
-        btns.addEventListener("click", () => {
+        btn.addEventListener("click", () => {
             if (document.getElementById("active") !== null)
             {
                 document.getElementById("active").removeAttribute("id");
-                btns.id = "active";
+                btn.id = "active";
             }
             else if (document.getElementById("active") === null)
             {
-                btns.id = "active";
+                btn.id = "active";
             }
         });
     }
@@ -53,3 +53,5 @@ scoreContainer.classList.add("score-container");
 scoreContainer.appendChild(humanScoreContainer);
 scoreContainer.appendChild(versusText);
 scoreContainer.appendChild(computerScoreContainer);
+
+contentContainer.appendChild(scoreContainer);
