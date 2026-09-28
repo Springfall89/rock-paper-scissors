@@ -32,3 +32,7 @@ scoreContainer.classList.add("score-container");
 
     computerScoreContainer.appendChild(computerScoreText);
     computerScoreContainer.appendChild(computerScoreNum);
+
+    const versusText = document.createElement("p");
+    versusText.classList.add("versus-text");
+    versusText.textContent = "VS";
