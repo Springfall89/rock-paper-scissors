@@ -1,0 +1,1 @@
+const CONTENT_CONTAINER = document.querySelector(".content-container");
