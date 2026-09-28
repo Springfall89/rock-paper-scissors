@@ -1,4 +1,4 @@
-const CONTENT_CONTAINER = document.querySelector(".content-container");
+const contentContainer = document.querySelector(".content-container");
 
-const SCORE_CONTAINER = document.createElement("div");
-SCORE_CONTAINER.classList.add("score-container");
+const scoreContainer = document.createElement("div");
+scoreContainer.classList.add("score-container");
