@@ -72,9 +72,10 @@ body
 /* DOM Elements */
 .score-container
 {
-    width: 400px;
+    width: 30vw;
     display: flex;
     justify-content: space-between;
+    gap: 35px;
 }
 .score-container > *
 {
