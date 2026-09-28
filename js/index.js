@@ -1,6 +1,19 @@
 const contentContainer = document.querySelector(".content-container");
 const btnLinks = document.querySelectorAll(".btn-link");
-
+    for (let btnLink of btnLinks)
+    {
+        btnLink.addEventListener("click", () => {
+            if (document.getElementById("active") !== null)
+            {
+                document.getElementById("active").removeAttribute("id");
+                btnLink.id = "active";
+            }
+            else if (document.getElementById("active") === null)
+            {
+                btnLink.id = "active";
+            }
+        });
+    }
 let humanScore = 0;
 let computerScore = 0;
 const scoreContainer = document.createElement("div");
