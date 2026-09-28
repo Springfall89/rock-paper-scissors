@@ -36,3 +36,7 @@ scoreContainer.classList.add("score-container");
     const versusText = document.createElement("p");
     versusText.classList.add("versus-text");
     versusText.textContent = "VS";
+
+scoreContainer.appendChild(humanScoreContainer);
+scoreContainer.appendChild(versusText);
+scoreContainer.appendChild(computerScoreContainer);
