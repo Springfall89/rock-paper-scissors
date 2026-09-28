@@ -1,16 +1,16 @@
 const contentContainer = document.querySelector(".content-container");
-const btnLinks = document.querySelectorAll(".btn-link");
-    for (let btnLink of btnLinks)
+const btns = document.querySelectorAll(".btns");
+    for (let btns of btns)
     {
-        btnLink.addEventListener("click", () => {
+        btns.addEventListener("click", () => {
             if (document.getElementById("active") !== null)
             {
                 document.getElementById("active").removeAttribute("id");
-                btnLink.id = "active";
+                btns.id = "active";
             }
             else if (document.getElementById("active") === null)
             {
-                btnLink.id = "active";
+                btns.id = "active";
             }
         });
     }
