@@ -71,6 +71,11 @@ p
     flex-direction: column;
     align-items: center;
 }
+/* IDS */
+#active
+{
+    background-color: #1330ce;
+}
 /* PSEUDO CLASSES */
 .src:hover
 {
