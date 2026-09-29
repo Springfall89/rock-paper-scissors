@@ -70,5 +70,10 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreInput.setAttribute("min", 1);
     maxScoreInput.setAttribute("max", 1000);
 
+    const maxScoreBtn = document.createElement("button");
+    maxScoreBtn.classList.add("max-score-btn");
+    maxScoreBtn.textContent = "OK";
+
 maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
+maxScoreForm.appendChild(maxScoreBtn);
