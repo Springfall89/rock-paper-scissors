@@ -77,6 +77,7 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
         maxScore = maxScoreInput.value;
+        contentContainer.replaceChildren();
     });
 
 maxScoreForm.appendChild(maxScoreText);
