@@ -145,7 +145,7 @@ p
     border: none;
     border-radius: 10px;
     height: 64px;
-    width: 20vw;
+    width: 250px;
     font-weight: normal;
 }
 .max-score-btn
@@ -155,6 +155,6 @@ p
     border: none;
     border-radius: 5px;
     height: 35px;
-    width: 5vw;
+    width: 64px;
     font-weight: 900;
 }
