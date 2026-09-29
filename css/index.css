@@ -133,3 +133,9 @@ p
     justify-content: center;
     gap: 16px;
 }
+.max-score-text
+{
+    font-weight: 900;
+    font-size: clamp(1rem, 4.5vw, 1.5rem);
+    text-align: center;
+}
