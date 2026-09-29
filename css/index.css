@@ -93,7 +93,8 @@ p
     background-color: #1330ce;
 }
 /* PSEUDO CLASSES */
-.src:hover
+.src:hover,
+.max-score-btn:hover
 {
     background-color: #1800ad;
 }
@@ -144,4 +145,13 @@ p
     height: 64px;
     width: 20vw;
     font-weight: normal;
+}
+.max-score-btn
+{
+    background-color: #08155c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 5vw;
 }
