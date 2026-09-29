@@ -75,7 +75,11 @@ maxScoreForm.classList.add("max-score-form");
 
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        if (maxScoreInput.value <= 0)
+        if (maxScoreInput.value === "")
+        {
+            alert("Please enter a number.");
+        }
+        else if (maxScoreInput.value <= 0)
         {
             alert("Value must be higher than zero.");
             maxScoreInput.value = "";
