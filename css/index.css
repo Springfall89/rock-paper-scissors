@@ -155,4 +155,5 @@ p
     aspect-ratio: 2 / 1;
     width: min(4em, 25%);
     font-weight: 900;
+    font-size: clamp(0.25rem, 4vw, 1rem);
 }
