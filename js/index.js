@@ -67,6 +67,7 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreInput.classList.add("max-score-input");
     maxScoreInput.id = "max-score";
     maxScoreInput.setAttribute("type", "number");
+    maxScoreInput.setAttribute("placeholder", "Please enter a number");
 
     const maxScoreBtn = document.createElement("button");
     maxScoreBtn.classList.add("max-score-btn");
