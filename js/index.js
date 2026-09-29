@@ -116,3 +116,6 @@ maxScoreForm.classList.add("max-score-form");
 maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
 maxScoreForm.appendChild(maxScoreBtn);
+
+contentContainer.appendChild(scoreContainer);
+contentContainer.appendChild(maxScoreForm);
