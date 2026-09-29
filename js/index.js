@@ -75,8 +75,16 @@ maxScoreForm.classList.add("max-score-form");
 
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        maxScore = maxScoreInput.value;
-        contentContainer.replaceChildren();
+        if (maxScoreInput.value <= 0)
+        {
+            alert("Value must be higher than zero.");
+            maxScoreInput.value = "";
+        }
+        else if (maxScoreInput.value > 0)
+        {
+            maxScore = maxScoreInput.value;
+            contentContainer.replaceChildren();
+        }
     });
 
 maxScoreForm.appendChild(maxScoreText);
