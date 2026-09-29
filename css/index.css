@@ -26,11 +26,6 @@ p
     font-size: clamp(1rem, 4.5vw, 1.5rem);
     text-align: center;
 }
-.src-sub-text,
-.max-score-btn
-{
-    font-size: clamp(0.25rem, 8vw, 1rem);
-}
 /* CLASSES */
 .header-container
 {
@@ -78,10 +73,13 @@ p
     justify-content: center;
     gap: 10px;
 }
-.src-main-text,
-.src-sub-text
+.src-main-text
 {
     text-align: start;
+}
+.src-sub-text
+{
+    font-size: clamp(0.25rem, 8vw, 1rem);
 }
 .content-container
 {
