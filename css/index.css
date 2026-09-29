@@ -19,7 +19,8 @@ p
 }
 .src-main-text,
 .score-text,
-.max-score-text
+.max-score-text,
+.max-score-input
 {
     font-weight: 900;
     font-size: clamp(1rem, 4.5vw, 1.5rem);
@@ -133,4 +134,14 @@ p
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+.max-score-input
+{
+    background-color: #08155c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 64px;
+    width: 20vw;
+    font-weight: normal;
 }
