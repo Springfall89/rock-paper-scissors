@@ -130,7 +130,7 @@ p
 .max-score-form
 {
     background-color: #0a1b78;
-    padding: 32px 56px 32px 56px;
+    padding: min(2em, 7.5%) min(4em, 8%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -144,8 +144,8 @@ p
     color: #ffffff;
     border: none;
     border-radius: 10px;
-    height: 64px;
-    width: 250px;
+    aspect-ratio: 4 / 1;
+    width: min(15.5em, 90%);
     font-weight: normal;
 }
 .max-score-btn
@@ -154,7 +154,7 @@ p
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    height: 35px;
-    width: 64px;
+    aspect-ratio: 2 / 1;
+    width: min(4em, 25%);
     font-weight: 900;
 }
