@@ -17,6 +17,14 @@ p
 {
     margin: 0;
 }
+.src-main-text,
+.score-text,
+.max-score-text
+{
+    font-weight: 900;
+    font-size: clamp(1rem, 4.5vw, 1.5rem);
+    text-align: center;
+}
 /* CLASSES */
 .header-container
 {
@@ -66,8 +74,7 @@ p
 }
 .src-main-text
 {
-    font-weight: 900;
-    font-size: clamp(0.5rem, 8vw, 1.5rem);
+    text-align: start;
 }
 .src-sub-text
 {
@@ -104,12 +111,6 @@ p
     flex-direction: column;
     justify-content: center;
 }
-.score-text
-{
-    font-weight: 900;
-    font-size: clamp(1rem, 4.5vw, 1.5rem);
-    text-align: center;
-}
 .score-num
 {
     font-weight: 900;
@@ -132,10 +133,4 @@ p
     align-items: center;
     justify-content: center;
     gap: 16px;
-}
-.max-score-text
-{
-    font-weight: 900;
-    font-size: clamp(1rem, 4.5vw, 1.5rem);
-    text-align: center;
 }
