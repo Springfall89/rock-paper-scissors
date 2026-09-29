@@ -78,6 +78,7 @@ maxScoreForm.classList.add("max-score-form");
         if (maxScoreInput.value === "")
         {
             alert("Please enter a number.");
+            maxScoreInput.value = "";
         }
         else if (maxScoreInput.value <= 0)
         {
