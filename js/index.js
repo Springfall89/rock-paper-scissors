@@ -67,8 +67,6 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreInput.classList.add("max-score-input");
     maxScoreInput.id = "max-score";
     maxScoreInput.setAttribute("type", "number");
-    maxScoreInput.setAttribute("min", 1);
-    maxScoreInput.setAttribute("max", 1000);
 
     const maxScoreBtn = document.createElement("button");
     maxScoreBtn.classList.add("max-score-btn");
@@ -83,3 +81,6 @@ maxScoreForm.classList.add("max-score-form");
 maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
 maxScoreForm.appendChild(maxScoreBtn);
+
+contentContainer.appendChild(scoreContainer);
+contentContainer.appendChild(maxScoreForm);
