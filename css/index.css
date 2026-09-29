@@ -137,6 +137,10 @@ p
     justify-content: center;
     gap: 16px;
 }
+.max-score-text
+{
+    cursor: text;
+}
 .max-score-input
 {
     background-color: #08155c;
@@ -157,4 +161,5 @@ p
     width: min(4em, 25%);
     font-weight: 900;
     font-size: clamp(0.25rem, 4vw, 1rem);
+    cursor: pointer;
 }
