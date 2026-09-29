@@ -53,3 +53,22 @@ scoreContainer.classList.add("score-container");
 scoreContainer.appendChild(humanScoreContainer);
 scoreContainer.appendChild(versusText);
 scoreContainer.appendChild(computerScoreContainer);
+
+let maxScore;
+const maxScoreForm = document.createElement("form");
+maxScoreForm.classList.add("max-score-form");
+
+    const maxScoreText = document.createElement("label");
+    maxScoreText.classList.add("max-score-text");
+    maxScoreText.setAttribute("for", "max-score");
+    maxScoreText.textContent = "How much score to win?";
+
+    const maxScoreInput = document.createElement("input");
+    maxScoreInput.classList.add("max-score-input");
+    maxScoreInput.id = "max-score";
+    maxScoreInput.setAttribute("type", "number");
+    maxScoreInput.setAttribute("min", 1);
+    maxScoreInput.setAttribute("max", 1000);
+
+maxScoreForm.appendChild(maxScoreText);
+maxScoreForm.appendChild(maxScoreInput);
