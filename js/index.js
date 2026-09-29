@@ -86,11 +86,36 @@ maxScoreForm.classList.add("max-score-form");
         }
         else if (maxScoreInput.value > 0)
         {
-            maxScore = maxScoreInput.value;
-            contentContainer.replaceChildren();
+            let maxScoreInputNum = Number(maxScoreInput.value)
+            if (Number.isInteger(maxScoreInputNum) === false)
+            {
+                alert("Please enter a whole number.");
+                maxScoreInput.value = "";
+            }
+            else if (Number.isFinite(maxScoreInputNum) === false)
+            {
+                alert("Please enter a finite number.");
+                maxScoreInput.value = "";
+            }
+            else if (Number.isInteger(maxScoreInputNum) === true)
+            {
+                if (maxScoreInputNum > 1000)
+                {
+                    alert("Value must be less than or equal to 1,000.");
+                    maxScoreInput.value = "";
+                }
+                else if (maxScoreInputNum <= 1000)
+                {
+                    maxScore = maxScoreInputNum;
+                    contentContainer.replaceChildren();
+                }
+            }
         }
     });
 
 maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
 maxScoreForm.appendChild(maxScoreBtn);
+
+contentContainer.appendChild(scoreContainer);
+contentContainer.appendChild(maxScoreForm);
