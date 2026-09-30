@@ -168,8 +168,8 @@ p
 {
     background-color: #ff3131;
     border-radius: 10px;
-    box-shadow: 0 0 0 20px #ff5757;
-    padding: 50px;
+    box-shadow: 0 0 0 5px #ff5757;
+    padding: 24px 32px;
     margin: 16px;
     display: flex;
     justify-content: space-between;
