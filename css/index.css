@@ -129,7 +129,8 @@ p
 .max-score-form
 {
     background-color: #0a1b78;
-    margin: 0 16px;
+    max-width: 350px;
+    margin: 0 32px;
     padding: min(2em, 7.5%) min(4em, 8%);
     border-radius: 10px;
     display: flex;
