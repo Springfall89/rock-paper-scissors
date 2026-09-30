@@ -145,5 +145,18 @@ maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
 maxScoreForm.appendChild(maxScoreBtn);
 
+const gameAnncmnt = document.createElement("div");
+gameAnncmnt.classList.add("game-anncmnt");
+
+    const gameAnncmntMainText = document.createElement("p");
+    gameAnncmntMainText.classList.add("game-anncmnt-main-text");
+    gameAnncmntMainText.textContent = "Pick your option!";
+
+    const gameAnncmntSubText = document.createElement("p");
+    gameAnncmntSubText.classList.add("game-anncmnt-sub-text");
+
+gameAnncmnt.appendChild(gameAnncmntMainText);
+gameAnncmnt.appendChild(gameAnncmntSubText);
+
 contentContainer.appendChild(scoreContainer);
 contentContainer.appendChild(maxScoreForm);
