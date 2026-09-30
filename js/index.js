@@ -132,7 +132,7 @@ maxScoreForm.classList.add("max-score-form");
                 else if (maxScoreInputNum <= 1000)
                 {
                     maxScore = maxScoreInputNum;
-                    contentContainer.replaceChildren();
+                    contentContainer.replaceChild();
                     window.addEventListener("beforeunload", (event) => {
                         event.preventDefault();
                     });
@@ -160,10 +160,14 @@ gameAnncmnt.appendChild(gameAnncmntSubText);
 
 function startGame(scoreNum)
 {
-    scoreContainer.removeChild(versusText);
     gameAnncmntSubText.textContent = `Best of ${scoreNum}!`;
     contentContainer.removeChild(maxScoreForm);
+    contentContainer.removeChild(scoreContainer);
+
     contentContainer.appendChild(gameAnncmnt);
+
+    contentContainer.appendChild(scoreContainer);
+    scoreContainer.removeChild(versusText);
 }
 
 contentContainer.appendChild(scoreContainer);
