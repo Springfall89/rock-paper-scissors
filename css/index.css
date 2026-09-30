@@ -190,10 +190,12 @@ p
 }
 .game-anncmnt
 {
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .game-anncmnt-main-text
 {
