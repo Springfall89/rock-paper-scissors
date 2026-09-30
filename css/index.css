@@ -101,6 +101,7 @@ p
 /* DOM Elements */
 .score-container
 {
+    width: 425px;
     padding: 32px 16px;
     margin-left: clamp(0.25em, 7vw, 2em);
     display: flex;
