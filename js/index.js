@@ -133,6 +133,9 @@ maxScoreForm.classList.add("max-score-form");
                 {
                     maxScore = maxScoreInputNum;
                     contentContainer.replaceChildren();
+                    window.addEventListener("beforeunload", (event) => {
+                        event.preventDefault();
+                    });
                 }
             }
         }
