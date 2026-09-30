@@ -205,6 +205,5 @@ p
 .game-anncmnt-sub-text
 {
     font-size: clamp(0.5rem, 4.5vw, 1.25rem);
-    font-weight: normal;
     text-align: center;
 }
