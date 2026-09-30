@@ -90,20 +90,23 @@ maxScoreForm.classList.add("max-score-form");
 
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        if (maxScoreInput.value === "")
+
+        function showError(errorText)
         {
-            maxScoreErrorText.textContent = "Please enter a number.";
+            maxScoreErrorText.textContent = errorText;
             maxScoreForm.removeChild(maxScoreBtn);
             maxScoreForm.appendChild(maxScoreError);
             maxScoreForm.appendChild(maxScoreBtn);
+        }
+
+        if (maxScoreInput.value === "")
+        {
+            showError("Please enter a number.");
             maxScoreInput.value = "";
         }
         else if (maxScoreInput.value <= 0)
         {
-            maxScoreErrorText.textContent = "Value must be higher than zero.";
-            maxScoreForm.removeChild(maxScoreBtn);
-            maxScoreForm.appendChild(maxScoreError);
-            maxScoreForm.appendChild(maxScoreBtn);
+            showError("Value must be higher than zero.");
             maxScoreInput.value = "";
         }
         else if (maxScoreInput.value > 0)
@@ -111,28 +114,19 @@ maxScoreForm.classList.add("max-score-form");
             let maxScoreInputNum = Number(maxScoreInput.value)
             if (Number.isInteger(maxScoreInputNum) === false)
             {
-                maxScoreErrorText.textContent = "Please enter a whole number.";
-                maxScoreForm.removeChild(maxScoreBtn);
-                maxScoreForm.appendChild(maxScoreError);
-                maxScoreForm.appendChild(maxScoreBtn);
+                showError("Please enter a whole number.");
                 maxScoreInput.value = "";
             }
             else if (Number.isFinite(maxScoreInputNum) === false)
             {
-                maxScoreErrorText.textContent = "Please enter a finite number.";
-                maxScoreForm.removeChild(maxScoreBtn);
-                maxScoreForm.appendChild(maxScoreError);
-                maxScoreForm.appendChild(maxScoreBtn);
+                showError("Please enter a finite number.");
                 maxScoreInput.value = "";
             }
             else if (Number.isInteger(maxScoreInputNum) === true)
             {
                 if (maxScoreInputNum > 1000)
                 {
-                    maxScoreErrorText.textContent = "Value must be less than or equal to 1,000.";
-                    maxScoreForm.removeChild(maxScoreBtn);
-                    maxScoreForm.appendChild(maxScoreError);
-                    maxScoreForm.appendChild(maxScoreBtn);
+                    showError("Value must be less than or equal to 1,000.");
                     maxScoreInput.value = "";
                 }
                 else if (maxScoreInputNum <= 1000)
