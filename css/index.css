@@ -169,15 +169,14 @@ p
     background-color: #ff3131;
     border-radius: 10px;
     box-shadow: 0 0 0 5px #ff5757;
-    padding: 24px 32px;
-    margin: 16px;
+    padding: min(0.5em, 8%);
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 16px;
 }
 .max-score-error-icon
 {
     aspect-ratio: 1 / 1;
-    width: 50px;
+    width: min(1.5em, 90%);
     height: auto;
 }
