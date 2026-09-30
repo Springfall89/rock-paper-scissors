@@ -168,7 +168,7 @@ p
 .max-score-error
 {
     background-color: #ff3131;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 0 5px #ff5757;
     padding: min(0.5em, 8%);
     display: flex;
