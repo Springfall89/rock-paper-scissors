@@ -78,7 +78,7 @@ maxScoreForm.classList.add("max-score-form");
 
         const maxScoreErrorIcon = document.createElement("img");
         maxScoreErrorIcon.classList.add("max-score-error-icon");
-        maxScoreErrorIcon.setAttribute("href", "./imgs/svgs/x.svg");
+        maxScoreErrorIcon.setAttribute("src", "./imgs/svgs/x.svg");
         maxScoreErrorIcon.setAttribute("alt", "X");
 
         const maxScoreErrorText = document.createElement("p");
