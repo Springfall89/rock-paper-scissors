@@ -159,7 +159,9 @@ gameAnncmnt.appendChild(gameAnncmntMainText);
 gameAnncmnt.appendChild(gameAnncmntSubText);
 
 function startGame(scoreNum)
-{
+{   
+    document.title = `Best of ${scoreNum}!`;
+
     gameAnncmntSubText.textContent = `Best of ${scoreNum}!`;
     contentContainer.removeChild(maxScoreForm);
     contentContainer.removeChild(scoreContainer);
@@ -168,7 +170,7 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(scoreContainer);
     scoreContainer.removeChild(versusText);
-    scoreContainer.setAttribute("style", "justify-content: space-between")
+    scoreContainer.setAttribute("style", "justify-content: space-between");
 }
 
 contentContainer.appendChild(scoreContainer);
