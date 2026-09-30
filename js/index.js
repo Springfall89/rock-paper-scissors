@@ -33,6 +33,23 @@ function random(maxNum)
     return result[0];
 }
 
+function shuffleFavicon()
+{
+    const favicon = document.querySelector("#favicon");
+    if (random(3) === 0)
+    {
+        favicon.setAttribute("href", "./imgs/svgs/emojis/rock.svg");
+    }
+    else if (random(3) === 1)
+    {
+        favicon.setAttribute("href", "./imgs/svgs/emojis/paper.svg");
+    }
+    else if (random(3) === 2)
+    {
+        favicon.setAttribute("href", "./imgs/svgs/emojis/scissors.svg");
+    }
+}
+
 let humanScore = 0;
 let computerScore = 0;
 const scoreContainer = document.createElement("div");
@@ -191,6 +208,8 @@ function startGame(scoreNum)
     scoreContainer.removeChild(versusText);
     scoreContainer.setAttribute("style", "justify-content: space-between");
 }
+
+shuffleFavicon();
 
 contentContainer.appendChild(scoreContainer);
 contentContainer.appendChild(maxScoreForm);
