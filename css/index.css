@@ -20,8 +20,7 @@ p
 .src-main-text,
 .score-text,
 .max-score-text,
-.max-score-input,
-.max-score-error-text
+.max-score-input
 {
     font-weight: 900;
     font-size: clamp(1rem, 4.5vw, 1.5rem);
@@ -174,6 +173,11 @@ p
     display: flex;
     justify-content: space-between;
     gap: 16px;
+}
+.max-score-error-text
+{
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 900;
 }
 .max-score-error-icon
 {
