@@ -157,11 +157,12 @@ p
     background-color: #08155c;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
-    aspect-ratio: 2 / 1;
-    width: min(4em, 25%);
+    border-radius: 7.5px;
+    aspect-ratio: 2 / 1.25;
+    width: min(5em, 25%);
+    height: auto;
     font-weight: 900;
-    font-size: clamp(0.25rem, 4vw, 1rem);
+    font-size: clamp(0.25rem, 4vw, 1.25rem);
     cursor: pointer;
 }
 .max-score-error
