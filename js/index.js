@@ -14,6 +14,25 @@ const btns = document.querySelectorAll(".btn");
             }
         });
     }
+
+function random(maxNum)
+{
+    const arr = [];
+    for (let i = 0; i < maxNum; i++)
+    {
+        arr.push(i);
+    }
+    for (let j = arr.length; j > 0; j--)
+    {
+        let k = Math.floor(Math.random() * (j+1));
+        let temp = arr[k];
+        arr[k] = arr[j];
+        arr[j] = temp;
+    }
+    const result = arr.filter((item) => {return item !==undefined});
+    return result[0];
+}
+
 let humanScore = 0;
 let computerScore = 0;
 const scoreContainer = document.createElement("div");
@@ -158,23 +177,6 @@ gameAnncmnt.classList.add("game-anncmnt");
 gameAnncmnt.appendChild(gameAnncmntMainText);
 gameAnncmnt.appendChild(gameAnncmntSubText);
 
-function random(maxNum)
-{
-    const arr = [];
-    for (let i = 0; i < maxNum; i++)
-    {
-        arr.push(i);
-    }
-    for (let j = arr.length; j > 0; j--)
-    {
-        let k = Math.floor(Math.random() * (j+1));
-        let temp = arr[k];
-        arr[k] = arr[j];
-        arr[j] = temp;
-    }
-    const result = arr.filter((item) => {return item !==undefined});
-    return result[0];
-}
 function startGame(scoreNum)
 {   
     document.title = `Best of ${scoreNum}!`;
