@@ -168,6 +168,7 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(scoreContainer);
     scoreContainer.removeChild(versusText);
+    scoreContainer.setAttribute("style", "justify-content: space-between")
 }
 
 contentContainer.appendChild(scoreContainer);
