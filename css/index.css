@@ -164,3 +164,14 @@ p
     font-size: clamp(0.25rem, 4vw, 1rem);
     cursor: pointer;
 }
+.max-score-error
+{
+    background-color: #ff3131;
+    border-radius: 10px;
+    box-shadow: 0 0 0 20px #ff5757;
+    padding: 50px;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
