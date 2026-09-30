@@ -172,7 +172,7 @@ p
     padding: min(0.5em, 8%) min(1em, 8%);
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 32px;
 }
 .max-score-error-text
 {
