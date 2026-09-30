@@ -73,6 +73,20 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreBtn.classList.add("max-score-btn");
     maxScoreBtn.textContent = "OK";
 
+    const maxScoreError = document.createElement("div");
+    maxScoreError.classList.add("max-score-error");
+
+        const maxScoreErrorIcon = document.createElement("img");
+        maxScoreErrorIcon.classList.add("max-score-error-icon");
+        maxScoreErrorIcon.setAttribute("href", "./imgs/svgs/x.svg");
+        maxScoreErrorIcon.setAttribute("alt", "X");
+
+        const maxScoreErrorText = document.createElement("p");
+        maxScoreErrorText.classList.add("max-score-error-text");
+
+    maxScoreError.appendChild(maxScoreErrorIcon);
+    maxScoreError.appendChild(maxScoreErrorText);
+
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
         if (maxScoreInput.value === "")
