@@ -158,5 +158,13 @@ gameAnncmnt.classList.add("game-anncmnt");
 gameAnncmnt.appendChild(gameAnncmntMainText);
 gameAnncmnt.appendChild(gameAnncmntSubText);
 
+function startGame(scoreNum)
+{
+    scoreContainer.removeChild(versusText);
+    gameAnncmntSubText.textContent = `Best of ${scoreNum}!`;
+    contentContainer.removeChild(maxScoreForm);
+    contentContainer.appendChild(gameAnncmnt);
+}
+
 contentContainer.appendChild(scoreContainer);
 contentContainer.appendChild(maxScoreForm);
