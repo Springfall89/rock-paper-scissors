@@ -20,7 +20,8 @@ p
 .src-main-text,
 .score-text,
 .max-score-text,
-.max-score-input
+.max-score-input,
+.game-anncmnt-sub-text
 {
     font-weight: 900;
     font-size: clamp(1rem, 4.5vw, 1.5rem);
@@ -186,4 +187,21 @@ p
     aspect-ratio: 1 / 1;
     width: min(1.5em, 90%);
     height: auto;
+}
+.game-anncmnt
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-anncmnt-main-text
+{
+    font-size: clamp(1rem, 8vw, 2rem);
+    font-weight: 900;
+    text-align: center;
+}
+.game-anncmnt-sub-text
+{
+    font-weight: normal;
 }
