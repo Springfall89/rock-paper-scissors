@@ -20,7 +20,8 @@ p
 .src-main-text,
 .score-text,
 .max-score-text,
-.max-score-input
+.max-score-input,
+.max-score-error-text
 {
     font-weight: 900;
     font-size: clamp(1rem, 4.5vw, 1.5rem);
