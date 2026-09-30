@@ -170,7 +170,7 @@ p
     background-color: #ff3131;
     border-radius: 5px;
     box-shadow: 0 0 0 5px #ff5757;
-    padding: min(0.5em, 8%);
+    padding: min(0.5em, 8%) min(1em, 8%);
     display: flex;
     justify-content: space-between;
     gap: 16px;
