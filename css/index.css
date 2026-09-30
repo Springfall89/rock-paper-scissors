@@ -175,3 +175,9 @@ p
     justify-content: space-between;
     gap: 32px;
 }
+.max-score-error-icon
+{
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    height: auto;
+}
