@@ -204,6 +204,30 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(gameAnncmnt);
 
+    const choiceBoxes = document.createElement("div");
+    choiceBoxes.classList.add("choice-boxes");
+
+        const choiceBox = document.createElement("div");
+        choiceBox.classList.add("choice-box");
+
+            const choice = document.createElement("img");
+            choice.classList.add("choice");
+            choice.setAttribute("src", "./imgs/svgs/question.svg");
+            choice.setAttribute("alt", "None");
+
+        choiceBox.appendChild(choice);
+    
+        const humanChoice = choiceBox.cloneNode(true);
+        const computerChoice = choiceBox.cloneNode(true);
+
+        humanChoice.id = "human-choice";
+        computerChoice.id = "computer-choice";
+
+    choiceBoxes.appendChild(humanChoice);
+    choiceBoxes.appendChild(computerChoice);
+
+    contentContainer.appendChild(choiceBoxes);
+
     contentContainer.appendChild(scoreContainer);
     scoreContainer.removeChild(versusText);
     scoreContainer.setAttribute("style", "justify-content: space-between");
