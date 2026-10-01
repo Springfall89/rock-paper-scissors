@@ -215,3 +215,8 @@ p
     justify-content: space-between;
     align-items: center;
 }
+.choice-boxes > *
+{
+    background-color: #0a1b78;
+    border-radius: 10px;
+}
