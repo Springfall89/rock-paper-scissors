@@ -209,3 +209,9 @@ p
     font-size: clamp(0.5rem, 4.5vw, 1.25rem);
     text-align: center;
 }
+.choice-boxes
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
