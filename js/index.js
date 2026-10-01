@@ -181,26 +181,26 @@ maxScoreForm.appendChild(maxScoreText);
 maxScoreForm.appendChild(maxScoreInput);
 maxScoreForm.appendChild(maxScoreBtn);
 
-const gameAnncmnt = document.createElement("div");
-gameAnncmnt.classList.add("game-anncmnt");
-
-    const gameAnncmntMainText = document.createElement("p");
-    gameAnncmntMainText.classList.add("game-anncmnt-main-text");
-    gameAnncmntMainText.textContent = "Pick your option!";
-
-    const gameAnncmntSubText = document.createElement("p");
-    gameAnncmntSubText.classList.add("game-anncmnt-sub-text");
-
-gameAnncmnt.appendChild(gameAnncmntMainText);
-gameAnncmnt.appendChild(gameAnncmntSubText);
-
 function startGame(scoreNum)
 {   
     document.title = `Best of ${scoreNum}!`;
 
-    gameAnncmntSubText.textContent = `Best of ${scoreNum}!`;
     contentContainer.removeChild(maxScoreForm);
     contentContainer.removeChild(scoreContainer);
+
+    const gameAnncmnt = document.createElement("div");
+    gameAnncmnt.classList.add("game-anncmnt");
+
+        const gameAnncmntMainText = document.createElement("p");
+        gameAnncmntMainText.classList.add("game-anncmnt-main-text");
+        gameAnncmntMainText.textContent = "Pick your option!";
+
+        const gameAnncmntSubText = document.createElement("p");
+        gameAnncmntSubText.classList.add("game-anncmnt-sub-text");
+        gameAnncmntSubText.textContent = `Best of ${scoreNum}!`;
+
+    gameAnncmnt.appendChild(gameAnncmntMainText);
+    gameAnncmnt.appendChild(gameAnncmntSubText);
 
     contentContainer.appendChild(gameAnncmnt);
 
