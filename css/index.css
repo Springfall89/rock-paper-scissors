@@ -102,7 +102,7 @@ p
 .score-container
 {
     max-width: 425px;
-    padding: min(2em, 5%) 16px 32px 16px;
+    padding: min(1.5em, 5%) 16px 16px 16px;
     margin-left: clamp(0.25em, 7vw, 2em);
     display: flex;
     justify-content: center;
@@ -190,8 +190,7 @@ p
 }
 .game-anncmnt
 {
-    padding: 32px;
-    padding-bottom: min(2em, 5%);
+    padding: 24px 16px min(1em, 5%) 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
