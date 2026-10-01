@@ -225,7 +225,7 @@ p
     border-radius: 10px;
     max-width: 150px;
     box-sizing: border-box;
-    padding: 16px;
+    padding: min(1em, 5%);
 }
 .choice
 {
