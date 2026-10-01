@@ -224,6 +224,8 @@ p
     background-color: #0a1b78;
     border-radius: 10px;
     max-width: 150px;
+    box-sizing: border-box;
+    padding: 16px;
 }
 .choice
 {
