@@ -214,9 +214,21 @@ p
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: clamp(3em, 13.5vw, 31em);
 }
 .choice-boxes > *
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0a1b78;
     border-radius: 10px;
+    max-width: 150px;
+}
+.choice
+{
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
 }
