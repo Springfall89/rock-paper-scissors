@@ -106,7 +106,7 @@ p
     margin-left: clamp(0.25em, 7vw, 2em);
     display: flex;
     justify-content: center;
-    gap: clamp(1em, 10vw, 6em);
+    gap: clamp(3em, 8vw, 6em);
 }
 .score-container > *
 {
