@@ -213,7 +213,7 @@ p
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(3em, 13.5vw, 31em);
+    gap: clamp(3em, 12.75vw, 31em);
     margin: 0 32px;
 }
 .choice-boxes > *
