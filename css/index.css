@@ -190,7 +190,7 @@ p
 }
 .game-anncmnt
 {
-    padding: 24px 16px min(1em, 5%) 16px;
+    padding: min(1.5em, 5%) 16px min(1em, 3%) 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
