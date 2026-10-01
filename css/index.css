@@ -214,6 +214,7 @@ p
     justify-content: space-between;
     align-items: center;
     gap: clamp(3em, 13.5vw, 31em);
+    margin: 0 32px;
 }
 .choice-boxes > *
 {
