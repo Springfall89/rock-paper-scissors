@@ -224,7 +224,8 @@ p
     align-items: center;
     background-color: #0a1b78;
     border-radius: 10px;
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
     box-sizing: border-box;
     padding: min(1em, 5%);
 }
