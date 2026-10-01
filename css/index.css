@@ -117,7 +117,7 @@ p
 .score-num
 {
     font-weight: 900;
-    font-size: clamp(1rem, 10vw, 4rem);
+    font-size: clamp(1rem, 10vw, 3rem);
     text-align: center;
 }
 .versus-text
