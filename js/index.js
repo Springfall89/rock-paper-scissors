@@ -228,9 +228,8 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(choiceBoxes);
 
+    versusText.setAttribute("style", "visibility: hidden");
     contentContainer.appendChild(scoreContainer);
-    scoreContainer.removeChild(versusText);
-    scoreContainer.setAttribute("style", "justify-content: space-between");
 }
 
 shuffleFavicon();
