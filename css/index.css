@@ -102,7 +102,7 @@ p
 .score-container
 {
     max-width: 425px;
-    padding: 32px 16px;
+    padding: min(2em, 5%) 16px 32px 16px;
     margin-left: clamp(0.25em, 7vw, 2em);
     display: flex;
     justify-content: center;
