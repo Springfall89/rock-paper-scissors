@@ -131,7 +131,7 @@ p
     background-color: #0a1b78;
     max-width: 350px;
     margin: 0 32px;
-    padding: min(2em, 7.5%) min(4em, 8%);
+    padding: min(2em, 7.5%) min(4em, 8%) min(1.5em, 4.5%) min(4em, 8%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
