@@ -228,6 +228,7 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(choiceBoxes);
 
+    scoreContainer.setAttribute("style", "padding-top: 16px");
     versusText.setAttribute("style", "visibility: hidden");
     contentContainer.appendChild(scoreContainer);
 }
