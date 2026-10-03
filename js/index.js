@@ -456,6 +456,8 @@ function startGame(scoreNum)
 
     function showResult()
     {
+        window.removeEventListener("beforeunload", warnBeforeUnload);
+
         choiceBoxes.remove();
         choiceBtns.remove();
 
