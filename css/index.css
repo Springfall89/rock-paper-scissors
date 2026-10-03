@@ -17,6 +17,11 @@ p
 {
     margin: 0;
 }
+button
+{
+    border-style: none;
+    cursor: pointer;
+}
 .src-main-text,
 .score-text,
 .max-score-text,
@@ -165,7 +170,6 @@ p
     height: auto;
     font-weight: 900;
     font-size: clamp(0.25rem, 4vw, 1.25rem);
-    cursor: pointer;
 }
 .max-score-error
 {
@@ -247,9 +251,4 @@ p
     max-width: 100%;
     min-width: 0;
     height: auto;
-}
-.choice-btn
-{
-    border-style: none;
-    cursor: pointer;
 }
