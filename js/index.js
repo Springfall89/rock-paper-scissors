@@ -272,6 +272,10 @@ function startGame(scoreNum)
                 choiceBtnImgScissors.setAttribute("alt", "Scissors");
             
             choiceBtnScissors.appendChild(choiceBtnImgScissors);
+
+    choiceBtns.appendChild(choiceBtnImgRock);
+    choiceBtns.appendChild(choiceBtnImgPaper);
+    choiceBtns.appendChild(choiceBtnImgScissors);
 }
 
 shuffleFavicon();
