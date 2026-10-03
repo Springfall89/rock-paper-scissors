@@ -476,6 +476,7 @@ function startGame(scoreNum)
 
             const playAgainText = document.createElement("p");
             playAgainText.classList.add("play-again-text");
+            playAgainText.textContent = "Play Again!";
 
         playAgainBtn.appendChild(playAgainText);
         playAgainBtn.addEventListener("click", () => {
