@@ -216,7 +216,8 @@ p
     gap: clamp(1em, 12.75vw, 31em);
     margin: 0 32px;
 }
-.choice-boxes > *
+.choice-boxes > *,
+.choice-btn
 {
     display: flex;
     justify-content: center;
@@ -228,7 +229,8 @@ p
     box-sizing: border-box;
     padding: min(1em, 5%);
 }
-.choice
+.choice,
+.choice-btn-img
 {
     aspect-ratio: 1 / 1;
     max-width: 100%;
