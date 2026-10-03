@@ -416,7 +416,7 @@ function startGame(scoreNum)
             }
             else if (computerSelection === SCISSORS)
             {
-                computerChoice.setAttribute("src", "/imgs/svgs/emojis/scissors.svg");
+                computerChoice.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
                 computerChoice.setAttribute("alt", "Scissors");
             }
             
@@ -432,13 +432,13 @@ function startGame(scoreNum)
             }
             else if (humanSelection === SCISSORS)
             {
-                humanChoice.setAttribute("src", "/imgs/svgs/emojis/scissors.svg");
+                humanChoice.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
                 humanChoice.setAttribute("alt", "Scissors");
             }
         }
+        updateGameAnncmntAndScore(computerSelection, humanSelection);
+        updateChoices(computerSelection, humanSelection);
     }
-    updateGameAnncmntAndScore(computerSelection, humanSelection);
-    updateChoices(computerSelection, humanSelection);
 }
 
 shuffleFavicon();
