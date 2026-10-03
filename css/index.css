@@ -100,7 +100,8 @@ button
 /* PSEUDO CLASSES */
 .src:hover,
 .max-score-btn:hover,
-.choice-btn:hover
+.choice-btn:hover,
+.play-again-btn:hover
 {
     background-color: #1800ad;
 }
