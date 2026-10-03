@@ -253,7 +253,7 @@ function startGame(scoreNum)
                 choiceBtnImgRock.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
                 choiceBtnImgRock.setAttribute("alt", "Rock");
 
-            choiceBtnImgRock.appendChild(choiceBtnImgRock);
+            choiceBtnRock.appendChild(choiceBtnImgRock);
 }
 
 shuffleFavicon();
