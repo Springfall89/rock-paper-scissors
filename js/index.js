@@ -15,7 +15,7 @@ const btns = document.querySelectorAll(".btn");
         });
     }
 
-function random(maxNum)
+function getRandomInt(maxNum)
 {
     return Math.floor(Math.random() * maxNum);
 }
@@ -23,15 +23,15 @@ function random(maxNum)
 function shuffleFavicon()
 {
     const favicon = document.querySelector("#favicon");
-    if (random(3) === 0)
+    if (getRandomInt(3) === 0)
     {
         favicon.setAttribute("href", "./imgs/svgs/emojis/rock.svg");
     }
-    else if (random(3) === 1)
+    else if (getRandomInt(3) === 1)
     {
         favicon.setAttribute("href", "./imgs/svgs/emojis/paper.svg");
     }
-    else if (random(3) === 2)
+    else if (getRandomInt(3) === 2)
     {
         favicon.setAttribute("href", "./imgs/svgs/emojis/scissors.svg");
     }
@@ -274,7 +274,7 @@ function startGame(scoreNum)
 
     function getComputerChoice()
     {
-        const choiceNum = random(3);
+        const choiceNum = getRandomInt(3);
         if (choiceNum === 0)
         {
             return ROCK;
