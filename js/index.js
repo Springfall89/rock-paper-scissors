@@ -168,9 +168,12 @@ maxScoreForm.classList.add("max-score-form");
                 else if (maxScoreInputNum <= 1000)
                 {
                     maxScore = maxScoreInputNum;
-                    window.addEventListener("beforeunload", (event) => {
-                        event.preventDefault();
-                    });
+                    window.addEventListener("beforeunload",
+                        function warnBeforeUnload(event)
+                        {
+                            event.preventDefault();
+                        }
+                    );
                     startGame(maxScore);
                 }
             }
