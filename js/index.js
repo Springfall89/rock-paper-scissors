@@ -278,6 +278,10 @@ function startGame(scoreNum)
     choiceBtns.appendChild(choiceBtnScissors);
 
     contentContainer.appendChild(choiceBtns);
+
+    const ROCK = "rock";
+    const PAPER = "paper";
+    const SCISSORS = "scissors";
 }
 
 shuffleFavicon();
