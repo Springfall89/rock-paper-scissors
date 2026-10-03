@@ -466,6 +466,19 @@ function startGame(scoreNum)
         {
             gameAnncmntSubText.textContent = "You Win!";
         }
+
+        const playAgainBtn = document.createElement("button");
+        playAgainBtn.classList.add("play-again-btn");
+
+            const playAgainText = document.createElement("p");
+            playAgainText.classList.add("play-again-text");
+
+        playAgainBtn.appendChild(playAgainText);
+        playAgainBtn.addEventListener("click", () => {
+            location.reload();
+        });
+
+        contentContainer.appendChild(playAgainBtn);
     }
 }
 
