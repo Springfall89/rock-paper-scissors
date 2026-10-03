@@ -172,7 +172,7 @@ function warnBeforeUnload(event)
                 else if (maxScoreInputNum <= 1000)
                 {
                     maxScore = maxScoreInputNum;
-                    window.addEventListener("beforeunload", warnBeforeUnload());
+                    window.addEventListener("beforeunload", warnBeforeUnload);
                     startGame(maxScore);
                 }
             }
