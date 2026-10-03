@@ -124,6 +124,10 @@ maxScoreForm.classList.add("max-score-form");
     maxScoreError.appendChild(maxScoreErrorIcon);
     maxScoreError.appendChild(maxScoreErrorText);
 
+function warnBeforeUnload(event)
+{
+    event.preventDefault();
+}
     maxScoreBtn.addEventListener("click", (event) => {
         event.preventDefault();
 
@@ -168,12 +172,7 @@ maxScoreForm.classList.add("max-score-form");
                 else if (maxScoreInputNum <= 1000)
                 {
                     maxScore = maxScoreInputNum;
-                    window.addEventListener("beforeunload",
-                        function warnBeforeUnload(event)
-                        {
-                            event.preventDefault();
-                        }
-                    );
+                    window.addEventListener("beforeunload", warnBeforeUnload());
                     startGame(maxScore);
                 }
             }
