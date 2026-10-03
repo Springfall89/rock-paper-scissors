@@ -254,10 +254,16 @@ button
 }
 .play-again-btn
 {
+    color: #ffffff;
     background-color: #0a1b78;
     border-radius: 5px;
     padding: min(0.5em, 8%) min(1em, 8%);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.play-again-text
+{
+    font-size: clamp(1rem, 4vw, 5rem);
+    font-weight: 900;
 }
