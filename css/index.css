@@ -247,3 +247,8 @@ p
     min-width: 0;
     height: auto;
 }
+.choice-btn
+{
+    border-style: none;
+    cursor: pointer;
+}
