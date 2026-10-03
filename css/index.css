@@ -216,6 +216,16 @@ p
     gap: clamp(1em, 12.75vw, 31em);
     margin: 0 32px;
 }
+.choice-btns
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(1.5em, 7.5vw, 3em);
+    margin: min(1.5em, 5%) 16px 16px 16px;
+}
+
 .choice-boxes > *,
 .choice-btn
 {
