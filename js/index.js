@@ -319,7 +319,112 @@ function startGame(scoreNum)
     {
         let computerSelection = getComputerChoice();
         computerSelection;
-    }
+
+        function updateGameAnncmnt(computerSelection, humanSelection)
+        {
+            function capitalizeSelection(selection)
+            {
+                let firstLetter = selection.charAt(0);
+                let remainingLetters = selection.slice(1);
+
+                return firstLetter.toUpperCase() + remainingLetters;
+            }
+
+            let capComputerSelection = capitalizeSelection(computerSelection);
+            let capHumanSelection = capitalizeSelection(humanSelection);
+
+            if (computerSelection === humanSelection)
+            {
+                gameAnncmntMainText.textContent = "It's a tie!";
+                gameAnncmntSubText.textContent = `${capHumanSelection} and ${capComputerSelection}!`;
+            }
+            else if (computerSelection !== humanSelection)
+            {
+                if (
+                    (computerSelection === ROCK) &&
+                    (humanSelection === PAPER)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Win!";
+                    gameAnncmntSubText.textContent = "Paper beats Rock!";
+                }
+                else if (
+                    (computerSelection === ROCK) &&
+                    (humanSelection === SCISSORS)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Lose!";
+                    gameAnncmntSubText.textContent = "Rock beats Scissors!";
+                }
+                else if (
+                    (computerSelection === PAPER) &&
+                    (humanSelection === ROCK)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Lose!";
+                    gameAnncmntSubText.textContent = "Paper beats Rock!";
+                }
+                else if (
+                    (computerSelection === PAPER) &&
+                    (humanSelection === SCISSORS)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Win!";
+                    gameAnncmntSubText.textContent = "Scissors cut Paper!";
+                }
+                else if (
+                    (computerSelection === SCISSORS) &&
+                    (humanSelection === ROCK)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Win!";
+                    gameAnncmntSubText.textContent = "Rock beats Scissors!";
+                }
+                else if (
+                    (computerSelection === SCISSORS) &&
+                    (humanSelection === PAPER)
+                    )
+                {
+                    gameAnncmntMainText.textContent = "You Lose!";
+                    gameAnncmntSubText.textContent = "Scissors cut Paper!";
+                }
+            }
+        }
+        function updateChoices(computerSelection, humanSelection)
+        {
+            if (computerSelection === ROCK)
+            {
+                computerChoice.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
+                computerChoice.setAttribute("alt", "Rock");
+            }
+            else if (computerSelection === PAPER)
+            {
+                computerChoice.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
+                computerChoice.setAttribute("alt", "Paper");
+            }
+            else if (computerSelection === SCISSORS)
+            {
+                computerChoice.setAttribute("src", "/imgs/svgs/emojis/scissors.svg");
+                computerChoice.setAttribute("alt", "Scissors");
+            }
+            
+            if (humanSelection === ROCK)
+            {
+                humanChoice.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
+                humanChoice.setAttribute("alt", "Rock");
+            }
+            else if (humanSelection === PAPER)
+            {
+                humanChoice.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
+                humanChoice.setAttribute("alt", "Paper");
+            }
+            else if (humanSelection === SCISSORS)
+            {
+                humanChoice.setAttribute("src", "/imgs/svgs/emojis/scissors.svg");
+                humanChoice.setAttribute("alt", "Scissors");
+            }
+        }
+}
 
 shuffleFavicon();
 
