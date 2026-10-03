@@ -236,6 +236,24 @@ function startGame(scoreNum)
     scoreContainer.setAttribute("style", "padding-top: 16px");
     versusText.setAttribute("style", "visibility: hidden");
     contentContainer.appendChild(scoreContainer);
+
+    const choiceBtns = document.createElement("div");
+    choiceBtns.classList.add("choice-btns");
+
+        const choiceBtn = document.createElement("button");
+        choiceBtn.classList.add("choice-btn");
+
+        const choiceBtnImg = document.createElement("img");
+        choiceBtnImg.classList.add("choice-btn-img");
+
+            const choiceBtnRock = choiceBtn.cloneNode();
+            choiceBtnRock.id = "choice-btn-rock";
+
+                const choiceBtnImgRock = choiceBtnImg.cloneNode();
+                choiceBtnImgRock.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
+                choiceBtnImgRock.setAttribute("alt", "Rock");
+
+            choiceBtnImgRock.appendChild(choiceBtnImgRock);
 }
 
 shuffleFavicon();
