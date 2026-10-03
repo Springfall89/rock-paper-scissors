@@ -254,6 +254,24 @@ function startGame(scoreNum)
                 choiceBtnImgRock.setAttribute("alt", "Rock");
 
             choiceBtnRock.appendChild(choiceBtnImgRock);
+
+            const choiceBtnPaper = choiceBtn.cloneNode();
+            choiceBtnPaper.id = "choice-btn-paper";
+
+                const choiceBtnImgPaper = choiceBtnImg.cloneNode();
+                choiceBtnImgPaper.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
+                choiceBtnImgPaper.setAttribute("alt", "Paper");
+
+            choiceBtnPaper.appendChild(choiceBtnImgPaper);
+
+            const choiceBtnScissors = choiceBtn.cloneNode();
+            choiceBtnScissors.id = "choice-btn-scissors";
+
+                const choiceBtnImgScissors = choiceBtnImg.cloneNode();
+                choiceBtnImgScissors.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
+                choiceBtnImgScissors.setAttribute("alt", "Scissors");
+            
+            choiceBtnScissors.appendChild(choiceBtnImgScissors);
 }
 
 shuffleFavicon();
