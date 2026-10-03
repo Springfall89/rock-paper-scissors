@@ -94,7 +94,8 @@ p
 }
 /* PSEUDO CLASSES */
 .src:hover,
-.max-score-btn:hover
+.max-score-btn:hover,
+.choice-btn:hover
 {
     background-color: #1800ad;
 }
