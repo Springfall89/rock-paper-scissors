@@ -451,7 +451,24 @@ function startGame(scoreNum)
         }
     }
     getHumanChoice();
+
+    function showResult()
+    {
+        choiceBoxes.remove();
+        choiceBtns.remove();
+
+        gameAnncmntMainText.textContent = "Game Over!";
+        if (computerScore > humanScore)
+        {
+            gameAnncmntSubText.textContent = "You Lose!";
+        }
+        else if (computerScore < humanScore)
+        {
+            gameAnncmntSubText.textContent = "You Win!";
+        }
+    }
 }
+
 
 shuffleFavicon();
 
