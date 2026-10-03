@@ -349,6 +349,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Paper beats Rock!";
                     ++humanScore;
                     humanScoreNum.textContent = humanScore;
+                    return humanScore;
                 }
                 else if (
                     (computerSelection === ROCK) &&
@@ -359,6 +360,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Rock beats Scissors!";
                     ++computerScore;
                     computerScoreNum.textContent = computerScore;
+                    return computerScore;
                 }
                 else if (
                     (computerSelection === PAPER) &&
@@ -369,6 +371,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Paper beats Rock!";
                     ++computerScore;
                     computerScoreNum.textContent = computerScore;
+                    return computerScore;
                 }
                 else if (
                     (computerSelection === PAPER) &&
@@ -379,6 +382,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Scissors cut Paper!";
                     ++humanScore;
                     humanScoreNum.textContent = humanScore;
+                    return humanScore;
                 }
                 else if (
                     (computerSelection === SCISSORS) &&
@@ -389,6 +393,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Rock beats Scissors!";
                     ++humanScore;
                     humanScoreNum.textContent = humanScore;
+                    return humanScore;
                 }
                 else if (
                     (computerSelection === SCISSORS) &&
@@ -399,6 +404,7 @@ function startGame(scoreNum)
                     gameAnncmntSubText.textContent = "Scissors cut Paper!";
                     ++computerScore;
                     computerScoreNum.textContent = computerScore;
+                    return computerScore;
                 }
             }
         }
