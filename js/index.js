@@ -215,13 +215,13 @@ function startGame(scoreNum)
         choice.setAttribute("src", "./imgs/svgs/question.svg");
         choice.setAttribute("alt", "None");
     
-        const humanChoiceBox = choiceBox.cloneNode(true);
-        const computerChoiceBox = choiceBox.cloneNode(true);
+        const humanChoiceBox = choiceBox.cloneNode();
+        const computerChoiceBox = choiceBox.cloneNode();
         humanChoiceBox.id = "human-choice-box";
         computerChoiceBox.id = "computer-choice-box";
 
-        const humanChoice = choice.cloneNode(true);
-        const computerChoice = choice.cloneNode(true);
+        const humanChoice = choice.cloneNode();
+        const computerChoice = choice.cloneNode();
         humanChoice.id = "human-choice";
         computerChoice.id = "computer-choice";
 
