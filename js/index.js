@@ -299,6 +299,19 @@ function startGame(scoreNum)
             return SCISSORS;
         }
     }
+
+    function getHumanChoice()
+    {
+        choiceBtnRock.addEventListener("click", () => {
+            return ROCK;
+        });
+        choiceBtnPaper.addEventListener("click", () => {
+            return PAPER;
+        });
+        choiceBtnScissors.addEventListener("click", () => {
+            return SCISSORS;
+        });
+    }
 }
 
 shuffleFavicon();
