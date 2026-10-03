@@ -210,21 +210,26 @@ function startGame(scoreNum)
         const choiceBox = document.createElement("div");
         choiceBox.classList.add("choice-box");
 
-            const choice = document.createElement("img");
-            choice.classList.add("choice");
-            choice.setAttribute("src", "./imgs/svgs/question.svg");
-            choice.setAttribute("alt", "None");
-
-        choiceBox.appendChild(choice);
+        const choice = document.createElement("img");
+        choice.classList.add("choice");
+        choice.setAttribute("src", "./imgs/svgs/question.svg");
+        choice.setAttribute("alt", "None");
     
-        const humanChoice = choiceBox.cloneNode(true);
-        const computerChoice = choiceBox.cloneNode(true);
+        const humanChoiceBox = choiceBox.cloneNode(true);
+        const computerChoiceBox = choiceBox.cloneNode(true);
+        humanChoiceBox.id = "human-choice-box";
+        computerChoiceBox.id = "computer-choice-box";
 
+        const humanChoice = choice.cloneNode(true);
+        const computerChoice = choice.cloneNode(true);
         humanChoice.id = "human-choice";
         computerChoice.id = "computer-choice";
 
-    choiceBoxes.appendChild(humanChoice);
-    choiceBoxes.appendChild(computerChoice);
+        humanChoiceBox.appendChild(humanChoice);
+        computerChoiceBox.appendChild(computerChoice);
+
+    choiceBoxes.appendChild(humanChoiceBox);
+    choiceBoxes.appendChild(computerChoiceBox);
 
     contentContainer.appendChild(choiceBoxes);
 
