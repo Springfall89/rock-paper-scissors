@@ -314,7 +314,12 @@ function startGame(scoreNum)
     }
     const computerScoreNum = document.querySelector(".computer-score > .score-num");
     const humanScoreNum = document.querySelector(".human-score > .score-num");
-}
+
+    function playRound(humanSelection)
+    {
+        let computerSelection = getComputerChoice();
+        computerSelection;
+    }
 
 shuffleFavicon();
 
