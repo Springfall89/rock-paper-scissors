@@ -444,6 +444,11 @@ function startGame(scoreNum)
         }
         updateGameAnncmntAndScore(computerSelection, humanSelection);
         updateChoices(computerSelection, humanSelection);
+
+        if ((computerScore >= maxScore) || (humanScore >= maxScore))
+        {
+            return showResult();
+        }
     }
     getHumanChoice();
 }
