@@ -256,8 +256,9 @@ button
 {
     color: #ffffff;
     background-color: #0a1b78;
-    border-radius: 5px;
-    padding: min(0.5em, 8%) min(1em, 8%);
+    border-radius: 10px;
+    margin: min(1.5em, 5%) 16px 16px 16px;
+    padding: min(1.5em, 8%) min(3.5em, 8%);
     display: flex;
     justify-content: center;
     align-items: center;
