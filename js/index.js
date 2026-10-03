@@ -303,19 +303,17 @@ function startGame(scoreNum)
     function getHumanChoice()
     {
         choiceBtnRock.addEventListener("click", () => {
-            return getResult(ROCK);
+            return playRound(ROCK);
         });
         choiceBtnPaper.addEventListener("click", () => {
-            return getResult(PAPER);
+            return playRound(PAPER);
         });
         choiceBtnScissors.addEventListener("click", () => {
-            return getResult(SCISSORS);
+            return playRound(SCISSORS);
         });
     }
     const computerScoreNum = document.querySelector(".computer-score > .score-num");
     const humanScoreNum = document.querySelector(".human-score > .score-num");
-
-
 }
 
 shuffleFavicon();
