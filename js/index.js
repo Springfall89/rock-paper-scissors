@@ -282,6 +282,23 @@ function startGame(scoreNum)
     const ROCK = "rock";
     const PAPER = "paper";
     const SCISSORS = "scissors";
+
+    function getComputerChoice()
+    {
+        const choiceNum = random(3);
+        if (choiceNum === 0)
+        {
+            return ROCK;
+        }
+        else if (choiceNum === 1)
+        {
+            return PAPER;
+        }
+        else if (choiceNum === 2)
+        {
+            return SCISSORS;
+        }
+    }
 }
 
 shuffleFavicon();
