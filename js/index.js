@@ -437,6 +437,8 @@ function startGame(scoreNum)
             }
         }
     }
+    updateGameAnncmntAndScore(computerSelection, humanSelection);
+    updateChoices(computerSelection, humanSelection);
 }
 
 shuffleFavicon();
