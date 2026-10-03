@@ -320,7 +320,7 @@ function startGame(scoreNum)
         let computerSelection = getComputerChoice();
         computerSelection;
 
-        function updateGameAnncmnt(computerSelection, humanSelection)
+        function updateGameAnncmntAndScore(computerSelection, humanSelection)
         {
             function capitalizeSelection(selection)
             {
@@ -347,6 +347,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Win!";
                     gameAnncmntSubText.textContent = "Paper beats Rock!";
+                    ++humanScore;
+                    humanScoreNum.textContent = humanScore;
                 }
                 else if (
                     (computerSelection === ROCK) &&
@@ -355,6 +357,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Lose!";
                     gameAnncmntSubText.textContent = "Rock beats Scissors!";
+                    ++computerScore;
+                    computerScoreNum.textContent = computerScore;
                 }
                 else if (
                     (computerSelection === PAPER) &&
@@ -363,6 +367,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Lose!";
                     gameAnncmntSubText.textContent = "Paper beats Rock!";
+                    ++computerScore;
+                    computerScoreNum.textContent = computerScore;
                 }
                 else if (
                     (computerSelection === PAPER) &&
@@ -371,6 +377,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Win!";
                     gameAnncmntSubText.textContent = "Scissors cut Paper!";
+                    ++humanScore;
+                    humanScoreNum.textContent = humanScore;
                 }
                 else if (
                     (computerSelection === SCISSORS) &&
@@ -379,6 +387,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Win!";
                     gameAnncmntSubText.textContent = "Rock beats Scissors!";
+                    ++humanScore;
+                    humanScoreNum.textContent = humanScore;
                 }
                 else if (
                     (computerSelection === SCISSORS) &&
@@ -387,6 +397,8 @@ function startGame(scoreNum)
                 {
                     gameAnncmntMainText.textContent = "You Lose!";
                     gameAnncmntSubText.textContent = "Scissors cut Paper!";
+                    ++computerScore;
+                    computerScoreNum.textContent = computerScore;
                 }
             }
         }
@@ -424,6 +436,7 @@ function startGame(scoreNum)
                 humanChoice.setAttribute("alt", "Scissors");
             }
         }
+    }
 }
 
 shuffleFavicon();
