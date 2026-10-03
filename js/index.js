@@ -312,8 +312,8 @@ function startGame(scoreNum)
             return SCISSORS;
         });
     }
-    const computerScoreNum = querySelector(".computer-score > .score-num");
-    const humanScoreNum = querySelector(".human-core > .score-num");
+    const computerScoreNum = document.querySelector(".computer-score > .score-num");
+    const humanScoreNum = document.querySelector(".human-score > .score-num");
 }
 
 shuffleFavicon();
