@@ -273,9 +273,11 @@ function startGame(scoreNum)
             
             choiceBtnScissors.appendChild(choiceBtnImgScissors);
 
-    choiceBtns.appendChild(choiceBtnImgRock);
-    choiceBtns.appendChild(choiceBtnImgPaper);
-    choiceBtns.appendChild(choiceBtnImgScissors);
+    choiceBtns.appendChild(choiceBtnRock);
+    choiceBtns.appendChild(choiceBtnPaper);
+    choiceBtns.appendChild(choiceBtnScissors);
+
+    contentContainer.appendChild(choiceBtns);
 }
 
 shuffleFavicon();
