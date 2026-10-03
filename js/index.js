@@ -439,6 +439,7 @@ function startGame(scoreNum)
         updateGameAnncmntAndScore(computerSelection, humanSelection);
         updateChoices(computerSelection, humanSelection);
     }
+    getHumanChoice();
 }
 
 shuffleFavicon();
