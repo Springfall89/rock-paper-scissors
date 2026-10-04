@@ -268,9 +268,9 @@ function startGame(scoreNum)
 
     contentContainer.appendChild(choiceBtns);
 
-    const ROCK = "rock";
-    const PAPER = "paper";
-    const SCISSORS = "scissors";
+    const ROCK = "Rock";
+    const PAPER = "Paper";
+    const SCISSORS = "Scissors";
 
     function getComputerChoice()
     {
