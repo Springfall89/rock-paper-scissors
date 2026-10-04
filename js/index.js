@@ -172,7 +172,7 @@ maxScoreForm.appendChild(maxScoreBtn);
 
 function startGame(scoreNum)
 {   
-    document.title = `Best of ${scoreNum}!`;
+    document.title = `Best of ${scoreNum}! - Rock Paper Scissors`;
 
     contentContainer.removeChild(maxScoreForm);
     contentContainer.removeChild(scoreContainer);
