@@ -311,21 +311,10 @@ function startGame(scoreNum)
 
         function updateGameAnncmntAndScore(computerSelection, humanSelection)
         {
-            function capitalizeSelection(selection)
-            {
-                let firstLetter = selection.charAt(0);
-                let remainingLetters = selection.slice(1);
-
-                return firstLetter.toUpperCase() + remainingLetters;
-            }
-
-            let capComputerSelection = capitalizeSelection(computerSelection);
-            let capHumanSelection = capitalizeSelection(humanSelection);
-
             if (computerSelection === humanSelection)
             {
                 gameAnncmntMainText.textContent = "It's a tie!";
-                gameAnncmntSubText.textContent = `${capHumanSelection} and ${capComputerSelection}!`;
+                gameAnncmntSubText.textContent = `${humanSelection} and ${computerSelection}!`;
             }
             else if (computerSelection !== humanSelection)
             {
