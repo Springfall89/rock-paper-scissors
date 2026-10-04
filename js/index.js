@@ -436,7 +436,6 @@ function startGame(scoreNum)
 
         document.title = "Game Over! - Rock Paper Scissors";
 
-        choiceBoxes.remove();
         choiceBtns.remove();
 
         gameAnncmntMainText.textContent = "Game Over!";
