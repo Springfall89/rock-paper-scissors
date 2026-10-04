@@ -445,6 +445,8 @@ function startGame(scoreNum)
     {
         window.removeEventListener("beforeunload", warnBeforeUnload);
 
+        document.title = "Game Over! - Rock Paper Scissors";
+
         choiceBoxes.remove();
         choiceBtns.remove();
 
