@@ -237,6 +237,7 @@ function startGame(scoreNum)
 
             const choiceBtnRock = choiceBtn.cloneNode();
             choiceBtnRock.id = "choice-btn-rock";
+            choiceBtnRock.setAttribute("title", "Rock");
 
                 const choiceBtnImgRock = choiceBtnImg.cloneNode();
                 choiceBtnImgRock.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
@@ -246,6 +247,7 @@ function startGame(scoreNum)
 
             const choiceBtnPaper = choiceBtn.cloneNode();
             choiceBtnPaper.id = "choice-btn-paper";
+            choiceBtnPaper.setAttribute("title", "Paper");
 
                 const choiceBtnImgPaper = choiceBtnImg.cloneNode();
                 choiceBtnImgPaper.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
@@ -255,6 +257,7 @@ function startGame(scoreNum)
 
             const choiceBtnScissors = choiceBtn.cloneNode();
             choiceBtnScissors.id = "choice-btn-scissors";
+            choiceBtnScissors.setAttribute("title", "Scissors");
 
                 const choiceBtnImgScissors = choiceBtnImg.cloneNode();
                 choiceBtnImgScissors.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
@@ -392,32 +395,38 @@ function startGame(scoreNum)
             {
                 computerChoice.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
                 computerChoice.setAttribute("alt", "Rock");
+                computerChoice.setAttribute("title", "Rock");
             }
             else if (computerSelection === PAPER)
             {
                 computerChoice.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
                 computerChoice.setAttribute("alt", "Paper");
+                computerChoice.setAttribute("title", "Paper");
             }
             else if (computerSelection === SCISSORS)
             {
                 computerChoice.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
                 computerChoice.setAttribute("alt", "Scissors");
+                computerChoice.setAttribute("title", "Scissors");
             }
             
             if (humanSelection === ROCK)
             {
                 humanChoice.setAttribute("src", "./imgs/svgs/emojis/rock.svg");
                 humanChoice.setAttribute("alt", "Rock");
+                humanChoice.setAttribute("title", "Rock");
             }
             else if (humanSelection === PAPER)
             {
                 humanChoice.setAttribute("src", "./imgs/svgs/emojis/paper.svg");
                 humanChoice.setAttribute("alt", "Paper");
+                humanChoice.setAttribute("title", "Paper");
             }
             else if (humanSelection === SCISSORS)
             {
                 humanChoice.setAttribute("src", "./imgs/svgs/emojis/scissors.svg");
                 humanChoice.setAttribute("alt", "Scissors");
+                humanChoice.setAttribute("title", "Scissors");
             }
         }
         updateGameAnncmntAndScore(computerSelection, humanSelection);
